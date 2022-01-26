@@ -4,6 +4,9 @@
     echo 'Name form single quotes echo is: $name';
     echo '<br />';
     echo "Name form double quotes echo is: $name";
+    echo "<hr />";
+    $replaced_name = str_replace('M', 'n', $name);
+    echo "Replace m into n: ".$replaced_name;
 ?>
 
 <!DOCTYPE html>
