@@ -1,20 +1,27 @@
-# Lesson 4: Arrays
+# Lesson 5: Multidimensional Arrays
 
--   `indexed array`: there are 2 ways to create an array
+-   Multidimensional Array: Syntex of multidimensional array is
 
-    -   you can create array like this `$name = ['jhone', 'doe']`. That's the most populer way to create array
-    -   another way is `$name = array('jhon', 'doe', 'tesla')`.
+    ```php
+    $blog = [
+        ['array0vlaue0', 'array0value1', 'array0value2'],
+        ['array1vlaue0', 'array1value1', 'array1value2'],
+        ['array2vlaue0', 'array2value1', 'array2value2'],
+    ]
+    ```
 
--   `print_r()`: For displaying the whole array, we need to use `print_r()` funtion. because `echo` want a easy string to display, so it can't display the whole array. `print_r()` will do that for us.
+    for accessing the first array of `$blog` we should call that like this `$blog[0]` and so on. For accessing the 2nd value of second array we need to call `$blog` like this `$blog[1][1]`
 
--   `array_push()`: we can add new value into an array in 2 different way.
+    but that's a index array, for assosiative array syntex will be
 
-    -   `$name[] = value`
-    -   `array_push($name, value)`
+    ```php
+    $blog = [
+        ['array0vlaue0', 'array0value1', 'array0value2'],
+        ['array1vlaue0', 'array1value1', 'array1value2'],
+        ['array2vlaue0', 'array2value1', 'array2value2'],
+    ]
+    ```
 
--   `count()`: for counting how many value an array have, we can use `count()` function to do that. `echo count($name)`
+-   Takeoff array with `array_pop()`: it will grab and display the value of the last array of an multidimensional array.
 
--   `array_merge()`: for merging 2 array we can use `array_merge($value1, $value2)` function.
-
--   assosiate array: in assosiate array we can define the index name instead of number. like this `$city_name = ['jhone' => 'oslo', 'doe' => 'nairubi', 'hafsa' => 'mecca'];`
     _I created separate brach of each lesson_

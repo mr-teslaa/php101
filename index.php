@@ -1,45 +1,38 @@
 <?php
-    $name = ['nikola', 'tesla'];
-    $another_name = array('hafsa', 'aysha', 'fatima');
-
     // index array
-    echo "<h1>Index array</h1>";
-    echo "<hr/>";
-    echo "<h3>popular way to creat array</h3>";
-    echo "<br/>";
-    echo "First person of array: $name[0]";
-    echo "<hr/>";
-    echo "another way to creat array";
-    echo "<br/>";
-    echo "First person of array: $another_name[0]";
-    echo "<hr/>";
-    echo "<h3>Display whole array with print_r function</h3>";
-    print_r($name);
-    echo "<br/>";
-    print_r($another_name);
-    echo "<h3>Overwrite any data in array</h3>";
-    $another_name[0] = 'halima';
-    print_r($another_name);
-    echo "<hr/>";
-    echo "<h3>push/add any data in array</h3>";
-    $another_name[] = 'hafsa';
-    array_push($name, 'jhone');
-    print_r($another_name);
-    echo "<br/>";
-    print_r($name);
-    echo "<hr/>";
-    echo "<h3>counting array value</h3>";
-    echo '$name'." have ".count($name)." value";
-    echo "<hr/>";
-    echo "<h3>merging 2 array</h3>";
-    $merge_array = array_merge($name, $another_name);
-    print_r($merge_array);
-    echo "<hr/>";
+    $blog_index = [
+        ['How to make money online', 'lorem teh quick brown', 'Jhone Doe'],
+        ['How to fail in exam', 'you really think that', 'mr tesla'],
+        ['How to start dropshipping', 'dropshipping is an awesome way to make money', 'Evan Yu'],
+    ];
 
-    // assosiate array (eky & value pairs)
-    echo "<h1>Assosiate array</h1>";
-    $city_name = ['jhone' => 'oslo', 'doe' => 'nairubi', 'hafsa' => 'mecca'];
-    echo "Jhons city name is: ".$city_name['jhone'];
+    // associats array
+    $blog = [
+        [
+            'title' => 'How to make money online',
+            'details' => 'lorem teh quick brown',
+            'author' => 'Jhone Doe'],
+        [
+            'title' => 'How to fail in exam',
+            'details' => 'you really think that',
+            'author' => 'mr tesla'
+        ],
+        [
+            'title' => 'How to start dropshipping',
+            'details' => 'dropshipping is an awesome way to make money',
+            'author' => 'Evan Yu'
+        ],
+    ];
+
+    $blog[] = ['another title', 'another description', 'another author' ];
+    print_r($blog);
+    echo "<hr/>";
+    echo "Second value of second arrary: ".$blog_index[1][1];
+    echo "<br/>";
+    echo "Using assesiate arrray to access same value: ".$blog[1]['details'];
+    echo "<hr/>";
+    $popped = array_pop($blog);
+    print_r($popped);
 ?>
 
 <!DOCTYPE html>
