@@ -1,9 +1,20 @@
-# Lesson 3: Numbers
+# Lesson 4: Arrays
 
--   `floor()`: Floor function used for cut out the number after peuriod. it turns a float number into decimal number. i.e. if we have a variable `$pi=3.1416` and pass it through the `floor()` function the output will be `3`.
+-   `indexed array`: there are 2 ways to create an array
 
--   `ceil()`: Ceil function does the opposite of floor function. It fillup the number. i.e. if we have a variable `$pi=3.1416` and pass it through the `ceil()` function the output will be `4` because it fillup the number.
+    -   you can create array like this `$name = ['jhone', 'doe']`. That's the most populer way to create array
+    -   another way is `$name = array('jhon', 'doe', 'tesla')`.
 
--   `pi()`: pi funtion use to generate pi value.
+-   `print_r()`: For displaying the whole array, we need to use `print_r()` funtion. because `echo` want a easy string to display, so it can't display the whole array. `print_r()` will do that for us.
 
+-   `array_push()`: we can add new value into an array in 2 different way.
+
+    -   `$name[] = value`
+    -   `array_push($name, value)`
+
+-   `count()`: for counting how many value an array have, we can use `count()` function to do that. `echo count($name)`
+
+-   `array_merge()`: for merging 2 array we can use `array_merge($value1, $value2)` function.
+
+-   assosiate array: in assosiate array we can define the index name instead of number. like this `$city_name = ['jhone' => 'oslo', 'doe' => 'nairubi', 'hafsa' => 'mecca'];`
     _I created separate brach of each lesson_
