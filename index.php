@@ -1,12 +1,14 @@
-<!-- either you can echo any string in a php file, or you can echo that into a html tag like h1 or so -->
 <?php
-    $name = "MR-TESLA";
-    echo 'Name form single quotes echo is: $name';
-    echo '<br />';
-    echo "Name form double quotes echo is: $name";
-    echo "<hr />";
-    $replaced_name = str_replace('M', 'n', $name);
-    echo "Replace m into n: ".$replaced_name;
+    $radius = 25;
+    $pi = pi();
+
+    echo $pi * $radius**2;
+    echo "<br />";
+    // floor function
+    echo "example of floor function: ".floor($pi);
+    echo "<br />";
+    echo "example of ceil function: ".ceil($pi);
+
 ?>
 
 <!DOCTYPE html>
