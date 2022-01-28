@@ -1,27 +1,35 @@
-# Lesson 5: Multidimensional Arrays
+# Lesson 6: Loops
 
--   Multidimensional Array: Syntex of multidimensional array is
+### I am not going to expalin how loop works. Hope you already know what loops is, if not then learn any programming basics and come back here. Or try some duckduckgoing 😉.
 
-    ```php
-    $blog = [
-        ['array0vlaue0', 'array0value1', 'array0value2'],
-        ['array1vlaue0', 'array1value1', 'array1value2'],
-        ['array2vlaue0', 'array2value1', 'array2value2'],
-    ]
-    ```
-
-    for accessing the first array of `$blog` we should call that like this `$blog[0]` and so on. For accessing the 2nd value of second array we need to call `$blog` like this `$blog[1][1]`
-
-    but that's a index array, for assosiative array syntex will be
+-   `for()` loop: syntex is
 
     ```php
-    $blog = [
-        ['array0vlaue0', 'array0value1', 'array0value2'],
-        ['array1vlaue0', 'array1value1', 'array1value2'],
-        ['array2vlaue0', 'array2value1', 'array2value2'],
-    ]
+    $blogs = ['blog1', 'blog2', 'blog3',....];
+    for($i=0; $i<count($blogs); $i++) {
+        echo 'any template or something';
+    }
     ```
 
--   Takeoff array with `array_pop()`: it will grab and display the value of the last array of an multidimensional array.
+-   `foreach()` loop: syntex is
+
+    ```php
+    $blogs = ['blog1', 'blog2', 'blog3',....];
+    foreach($blogs as $blog) {
+        echo 'any template or something';
+    }
+    ```
+
+    The problem of `foreach()` we can't get the index number. For that we need to use `$key=>$value` method. syntex is
+
+    ```php
+    foreach ($array as $key => $value) {.........};
+    ```
+
+-   `while(condition)` loops: syntex is
+
+    ```php
+    while(condition) {......}
+    ```
 
     _I created separate brach of each lesson_
