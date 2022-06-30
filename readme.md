@@ -1,35 +1,13 @@
-# Lesson 6: Loops
+# Lesson 7: Functions
 
-### I am not going to expalin how loop works. Hope you already know what loops is, if not then learn any programming basics and come back here. Or try some duckduckgoing 😉.
+## If we want to return variable with string then we should do that like this, otherwise it will shows error
 
--   `for()` loop: syntex is
+```php
+function formateProduct($product) {
+    echo "{$product['name']} costs ${$product['price']}"
+}
+```
 
-    ```php
-    $blogs = ['blog1', 'blog2', 'blog3',....];
-    for($i=0; $i<count($blogs); $i++) {
-        echo 'any template or something';
-    }
-    ```
-
--   `foreach()` loop: syntex is
-
-    ```php
-    $blogs = ['blog1', 'blog2', 'blog3',....];
-    foreach($blogs as $blog) {
-        echo 'any template or something';
-    }
-    ```
-
-    The problem of `foreach()` we can't get the index number. For that we need to use `$key=>$value` method. syntex is
-
-    ```php
-    foreach ($array as $key => $value) {.........};
-    ```
-
--   `while(condition)` loops: syntex is
-
-    ```php
-    while(condition) {......}
-    ```
+## `include()` VS `require()`: if we use include function, we can execute rest of the php code. but if we use require function then rest of the code from require function will not work.
 
     _I created separate brach of each lesson_
